@@ -6,7 +6,7 @@ public class Car2DController : MonoBehaviour
 {
     bool setAccelerate = false;
     bool setBrake = false;
-    float speed = 8.0f;
+    float speed = 13.0f;
     float torque = -200.0f;
     float driftFactorSticky = 0.9f;
     float driftFactorSlippy = 1.0f;
@@ -21,21 +21,24 @@ public class Car2DController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Accelerate"))
+        if (EnterCarScript.isPlayerInAnyCar)
         {
-            setAccelerate = true;
-        }
-        else if (Input.GetButtonDown("Brakes"))
-        {
-            setBrake = true;
-        }
-        if (Input.GetButtonUp("Accelerate"))
-        {
-            setAccelerate = false;
-        }
-        else if (Input.GetButtonUp("Brakes"))
-        {
-            setBrake = false;
+            if (Input.GetButtonDown("Accelerate"))
+            {
+                setAccelerate = true;
+            }
+            else if (Input.GetButtonDown("Brakes"))
+            {
+                setBrake = true;
+            }
+            if (Input.GetButtonUp("Accelerate"))
+            {
+                setAccelerate = false;
+            }
+            else if (Input.GetButtonUp("Brakes"))
+            {
+                setBrake = false;
+            }
         }
     }
 
@@ -66,7 +69,6 @@ public class Car2DController : MonoBehaviour
 
         if (setBrake == true)
         {
-            //Debug.Log("Brake");
             rigBod2.AddForce(transform.up * (-1) * (speed / 2));
         }
 

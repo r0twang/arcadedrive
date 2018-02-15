@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerScript : MonoBehaviour {
 
-    bool departure = false;
+    public bool departure = false;
     // Use this for initialization
     void Start () {
 
@@ -12,13 +12,20 @@ public class TriggerScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        departure = true;
-        Debug.Log("You have departed lane");
+        if (EnterCarScript.isPlayerInAnyCar)
+        {
+            departure = true;
+            Debug.Log("You have departed lane");
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        departure = false;
+        if (EnterCarScript.isPlayerInAnyCar)
+        {
+            departure = false;
+        }
     }
 
     void OnGUI()
@@ -27,7 +34,7 @@ public class TriggerScript : MonoBehaviour {
         boldFont.richText = true;
         boldFont.fontStyle = FontStyle.Bold;
 
-        if (departure)
+        if (departure && EnterCarScript.isPlayerInAnyCar)
         {
             GUI.contentColor = Color.red;
             //GUI.Label(new Rect(5, 5, 100, 50), "You have departed lane");
