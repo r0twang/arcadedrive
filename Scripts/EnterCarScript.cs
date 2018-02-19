@@ -2,25 +2,35 @@
 using UnityEngine;
 
 public class EnterCarScript : MonoBehaviour {
-    public static bool isPlayerInAnyCar = false;
+
     public bool isPlayerInThisCar = false;
+    public static bool isPlayerInAnyCar = false;
+    public Behaviour[] carControllerScripts;
     public float minEnterDistance = 1.0f;
     public Transform exitPivot;
-    GameObject player;
+    public GameObject player;
 
-	// Use this for initialization
-	void Start () {
+    //Transform[] cars;
+
+    // Use this for initialization
+    void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+        foreach (Behaviour controller in carControllerScripts)
+        {
+            controller.enabled = false;
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         playerEnterCar();
         if (isPlayerInThisCar == true)
         {
             playerPosWhileInCar();
         }
-	}
+    }
 
     public void playerEnterCar()
     {

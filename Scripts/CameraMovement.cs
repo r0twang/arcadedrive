@@ -1,16 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class CameraFollow : MonoBehaviour {
+public class CameraMovement : MonoBehaviour {
     GameObject Player;
     public bool followPlayer = true;
-    public Transform target;
+
 
 	// Use this for initialization
 	void Start () {
         Player = GameObject.FindGameObjectWithTag("Player");
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,12 +17,6 @@ public class CameraFollow : MonoBehaviour {
         {
             CamFollowPlayer();
         }
-        if (EnterCarScript.isPlayerInAnyCar)
-        {
-            followPlayer = false;
-            transform.position = new Vector3(target.position.x, target.position.y, -10f);
-        }
-        else followPlayer = true;
 	}
 
     public void SetFollowPlayer(bool val)
