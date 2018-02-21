@@ -7,10 +7,10 @@ public class LoadTrack8 : MonoBehaviour {
 
 	void OnGUI()
 	{
-		if(GUI.Button(new Rect(15, 100, 100, 50), "Track8"))
-		{
-			Application.LoadLevel(2);
-		}
+        if (GUI.Button(new Rect(15, 100, 100, 50), "Track8"))
+        {
+            Application.LoadLevel(3);
+        }
         //hover = GUI.tooltip;
 
         //if (hover == "Track8")
@@ -29,7 +29,7 @@ public class LoadTrack8 : MonoBehaviour {
 		foreach(Touch touch in Input.touches)
 		{
 			if(gameObject.name == "Track8")
-				Application.LoadLevel(2);
+				Application.LoadLevel(3);
 		}
     }
 }

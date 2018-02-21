@@ -9,7 +9,11 @@ public class Track8Script: MonoBehaviour {
 		{
 			Application.LoadLevel(0);
 		}
-	}
+        if (GUI.Button(new Rect(5, 150, 100, 50), "Car Select"))
+        {
+            Application.LoadLevel(1);
+        }
+    }
 	
 	// Use this for initialization
 	void Start () {
