@@ -34,7 +34,7 @@ public class EnterCarScript : MonoBehaviour {
 
     public void playerEnterCar()
     {
-        if (Vector3.Distance (this.transform.position, player.transform.position) < minEnterDistance && isPlayerInThisCar == false )
+        if (Vector3.Distance (this.transform.position, player.transform.position) < minEnterDistance && isPlayerInThisCar == false)
         {
             if (Input.GetKeyDown (KeyCode.Quote))
             {

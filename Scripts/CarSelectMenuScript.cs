@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CarSelectMenuScript : MonoBehaviour {
@@ -8,7 +9,7 @@ public class CarSelectMenuScript : MonoBehaviour {
     {
         if (GUI.Button(new Rect(5, 5, 100, 100), "Dashboard"))
         {
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(0);
         }
     }
 
