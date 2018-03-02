@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class CarSelectMenuScript : MonoBehaviour {
+public class Track2Script : MonoBehaviour {
 
     void OnGUI()
     {
@@ -11,11 +11,14 @@ public class CarSelectMenuScript : MonoBehaviour {
         {
             SceneManager.LoadScene(1);
         }
+        if (GUI.Button(new Rect(5, 150, 100, 50), "Car Select"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
-
     // Use this for initialization
     void Start () {
-        EnterCarScript.isPlayerInAnyCar = false;
+		
 	}
 	
 	// Update is called once per frame

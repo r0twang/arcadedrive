@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour {
         if (EnterCarScript.isPlayerInAnyCar)
         {
             followPlayer = false;
-            transform.position = new Vector3(target.position.x, target.position.y, -10f);
+            transform.position = new Vector3(target.position.x, target.position.y + 3.0f, -10f);
         }
         else followPlayer = true;
 	}

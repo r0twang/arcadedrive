@@ -10,8 +10,6 @@ public class EnterCarScript : MonoBehaviour {
     public Transform exitPivot;
     public GameObject player;
 
-    //Transform[] cars;
-
     // Use this for initialization
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");

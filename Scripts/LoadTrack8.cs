@@ -10,16 +10,21 @@ public class LoadTrack8 : MonoBehaviour {
         {
             SceneManager.LoadScene(3);
         }
-        if (GUI.Button(new Rect(15, 180, 100, 50), "Car Select"))
+        if (GUI.Button(new Rect(15, 260, 100, 50), "Car Select"))
         {
             SceneManager.LoadScene(0);
         }
     }
 
+    public void ConfirmButton()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     // Use this for initialization
     void Start () {
-	
-	}
+        EnterCarScript.isPlayerInAnyCar = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {

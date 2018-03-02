@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerScript : MonoBehaviour {
 
     public bool departure = false;
+
     // Use this for initialization
     void Start () {
 

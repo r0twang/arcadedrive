@@ -11,12 +11,10 @@ public class Car2DController : MonoBehaviour
     float driftFactorSticky = 0.9f;
     float driftFactorSlippy = 1.0f;
     float maxStickyVelocity = 2.5f;
-    //float minSlippyVelocity = 1.5f;
 
     // Use this for initialization
     void Start()
     {
-
     }
 
     void Update()
@@ -27,7 +25,8 @@ public class Car2DController : MonoBehaviour
             {
                 setAccelerate = true;
             }
-            else if (Input.GetButtonDown("Brakes"))
+            else
+            if (Input.GetButtonDown("Brakes"))
             {
                 setBrake = true;
             }
@@ -55,11 +54,8 @@ public class Car2DController : MonoBehaviour
 
         rigBod2.velocity = ForwardVelocity() + RightVelocity() * driftFactor;
 
-        //Debug.Log(RightVelocity().magnitude);
-
         if (setAccelerate == true)
         {
-            //Debug.Log("Accelerate");
             rigBod2.AddForce(transform.up * speed);
         }
 
@@ -69,10 +65,8 @@ public class Car2DController : MonoBehaviour
 
         if (setBrake == true)
         {
-            rigBod2.AddForce(transform.up * (-1) * (speed / 2));
+            rigBod2.AddForce(transform.up * (-1) * (speed / 1));
         }
-
-        
     }
 
     Vector2 ForwardVelocity()
