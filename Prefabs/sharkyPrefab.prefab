@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50409452148558968}
   - component: {fileID: 114996870787608792}
   - component: {fileID: 114827574380763212}
+  - component: {fileID: 114684997346595534}
   m_Layer: 0
   m_Name: sharkyPrefab
   m_TagString: Untagged
@@ -39,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1361395509346558}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.44367346, y: -0.22496486, z: 4.3364844}
-  m_LocalScale: {x: 0.6500002, y: 0.63000023, z: 1}
+  m_LocalScale: {x: 0.96, y: 0.94, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -89,6 +90,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.11, y: 2.04}
   m_EdgeRadius: 0
+--- !u!114 &114684997346595534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361395509346558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411a31946be77d948806cd34f71a4f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114827574380763212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerInThisCar: 0
   carControllerScripts: []
-  minEnterDistance: 1
+  minEnterDistance: 1.3
   exitPivot: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &114996870787608792
