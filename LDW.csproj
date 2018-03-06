@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.2.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -228,15 +226,18 @@
     <Compile Include="Assets\Scripts\CarSelectionScript.cs" />
     <Compile Include="Assets\Scripts\CarSelectMenuScript.cs" />
     <Compile Include="Assets\Scripts\ChosenCarScript.cs" />
+    <Compile Include="Assets\Scripts\CollisionScript.cs" />
+    <Compile Include="Assets\Scripts\CzewaMenuScript.cs" />
     <Compile Include="Assets\Scripts\DistanceScript.cs" />
     <Compile Include="Assets\Scripts\EnterCarScript.cs" />
+    <Compile Include="Assets\Scripts\KatoMenuScript.cs" />
+    <Compile Include="Assets\Scripts\KrakMenuScript.cs" />
     <Compile Include="Assets\Scripts\LoadTrack1.cs" />
     <Compile Include="Assets\Scripts\LoadTrack2.cs" />
     <Compile Include="Assets\Scripts\LoadTrack8.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RedLineOver.cs" />
     <Compile Include="Assets\Scripts\RotateToCursor.cs" />
-    <Compile Include="Assets\Scripts\CollisionScript.cs" />
     <Compile Include="Assets\Scripts\Track1Script.cs" />
     <Compile Include="Assets\Scripts\Track2Script.cs" />
     <Compile Include="Assets\Scripts\Track8Script.cs" />
