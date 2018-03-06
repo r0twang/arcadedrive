@@ -7,19 +7,20 @@ public class LoadTrack2 : MonoBehaviour {
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(15, 180, 100, 50), "Track2"))
+        if (GUI.Button(new Rect(15, 15, 100, 50), "Dashboard"))
         {
-            SceneManager.LoadScene(4);
-        }
-        if (GUI.Button(new Rect(15, 260, 100, 50), "Car Select"))
-        {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 
     public void ConfirmButton()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("czewa");
+    }
+
+    public void ConfirmTrackButton()
+    {
+        SceneManager.LoadScene("track2");
     }
 
     // Use this for initialization
@@ -34,7 +35,7 @@ public class LoadTrack2 : MonoBehaviour {
     {
         foreach (Touch touch in Input.touches)
         {
-            if (gameObject.name == "Track2")
+            if (gameObject.name == "track2")
                 SceneManager.LoadScene(4);
         }
     }

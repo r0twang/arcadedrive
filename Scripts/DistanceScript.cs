@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
@@ -6,7 +7,8 @@ using UnityEngine;
 public class DistanceScript : MonoBehaviour {
 
     private Vector3 previousPosition;
-    float sumDistance;
+    float sumDistance = 0.0f;
+    const float czewaKatoDist = 210.0f;
 
     // Use this for initialization
     void Start () {
@@ -18,9 +20,9 @@ public class DistanceScript : MonoBehaviour {
         float distance = Vector3.Distance(previousPosition, transform.position);
         sumDistance += distance;
         previousPosition = transform.position;
-        //Debug.Log("Driven distance: " + transform.position.y + "/500 km");
 
-        if (transform.position.y >= 210)
+
+        if (transform.position.y >= czewaKatoDist)
         {
             EnterCarScript.isPlayerInAnyCar = false;
             SceneManager.LoadScene(1);

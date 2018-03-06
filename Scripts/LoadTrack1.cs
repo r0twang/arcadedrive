@@ -5,15 +5,11 @@ using UnityEngine.SceneManagement;
 public class LoadTrack1 : MonoBehaviour {
     void OnGUI()
 	{
-        if (GUI.Button(new Rect(15, 20, 100, 50), "Track1"))
+        if (GUI.Button(new Rect(15, 20, 100, 50), "Dashboard"))
 		{
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
-        if (GUI.Button(new Rect(15, 260, 100, 50), "Car Select"))
-        {
-            SceneManager.LoadScene(0);
-        }
-        if (GUI.Button(new Rect(15, 340, 100, 50), "Exit"))
+        if (GUI.Button(new Rect(15, 250, 100, 50), "Exit"))
         {
             Application.Quit();
         }
@@ -21,7 +17,12 @@ public class LoadTrack1 : MonoBehaviour {
 
     public void ConfirmButton()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("kato");
+    }
+
+    public void ConfirmTrackButton()
+    {
+        SceneManager.LoadScene("track1");
     }
 
     // Use this for initialization

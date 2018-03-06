@@ -6,11 +6,7 @@ public class LoadTrack8 : MonoBehaviour {
 
 	void OnGUI()
 	{
-        if (GUI.Button(new Rect(15, 100, 100, 50), "Track8"))
-        {
-            SceneManager.LoadScene(3);
-        }
-        if (GUI.Button(new Rect(15, 260, 100, 50), "Car Select"))
+        if (GUI.Button(new Rect(15, 100, 100, 50), "Car Select"))
         {
             SceneManager.LoadScene(0);
         }
@@ -18,7 +14,12 @@ public class LoadTrack8 : MonoBehaviour {
 
     public void ConfirmButton()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("krak");
+    }
+
+    public void ConfirmTrackButton()
+    {
+        SceneManager.LoadScene("track8");
     }
 
     // Use this for initialization
