@@ -34,7 +34,7 @@ public class KatoMenuScript : MonoBehaviour {
         }
     }
 
-    public void OnMouseClickDown()
+    public void OnMouseDown()
     {
         katoMenuOpen = false;
         katoMenuCanvas.GetComponent<Canvas>().enabled = false;
