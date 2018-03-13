@@ -31,14 +31,12 @@ public class MenuAppearScript : MonoBehaviour
 
             case Cities.empty:
             default:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(false);
+                clearCities();
                 break;
         }
     }
 
-    public void OnEmptyClick()
+    public void clearCities()
     {
         czewaActive = false;
         katoActive = false;
@@ -46,7 +44,12 @@ public class MenuAppearScript : MonoBehaviour
         czewaMenuPrefab.SetActive(czewaActive);
         katoMenuPrefab.SetActive(katoActive);
         krakMenuPrefab.SetActive(krakActive);
-        chosenCity = Cities.Czewa;
+    }
+
+    public void OnEmptyClick()
+    {
+        clearCities();
+        chosenCity = Cities.empty;
         Debug.Log("CZEWA: " + czewaActive);
         Debug.Log("KATO :" + katoActive);
         Debug.Log("KRAK :" + krakActive);
@@ -55,13 +58,9 @@ public class MenuAppearScript : MonoBehaviour
 
     public void OnCzewaCityClick()
     {
-        czewaActive = false;
-        katoActive = false;
-        krakActive = false;
+        clearCities();
         czewaActive = !czewaActive;
         czewaMenuPrefab.SetActive(czewaActive);
-        katoMenuPrefab.SetActive(katoActive);
-        krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Czewa;
         Debug.Log("CZEWA: " + czewaActive);
         Debug.Log("KATO :" + katoActive);
@@ -71,13 +70,9 @@ public class MenuAppearScript : MonoBehaviour
 
     public void OnKatoCityClick()
     {
-        czewaActive = false;
-        katoActive = false;
-        krakActive = false;
+        clearCities();
         katoActive = !katoActive;
         katoMenuPrefab.SetActive(katoActive);
-        czewaMenuPrefab.SetActive(czewaActive);
-        krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Kato;
         Debug.Log("CZEWA: " + czewaActive);
         Debug.Log("KATO :" + katoActive);
@@ -87,12 +82,8 @@ public class MenuAppearScript : MonoBehaviour
 
     public void OnKrakCityClick()
     {
-        czewaActive = false;
-        katoActive = false;
-        krakActive = false;
+        clearCities();
         krakActive = !krakActive;
-        czewaMenuPrefab.SetActive(czewaActive);
-        katoMenuPrefab.SetActive(katoActive);
         krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Krak;
         Debug.Log("CZEWA: " + czewaActive);
