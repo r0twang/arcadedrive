@@ -5,7 +5,15 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - czewaMenuPrefab: {fileID: 1785159225342494, guid: e3f03185ceedf574896854fd27a95c8c,
+      type: 2}
+  - katoMenuPrefab: {fileID: 1945521568699038, guid: b37c6fe442cf7324b99c0d872fe69257,
+      type: 2}
+  - krakMenuPrefab: {fileID: 1479616668614276, guid: cfd1e375c36ecdf4ab4ed4b0cf526f28,
+      type: 2}
+  - bielskoMenuPrefab: {fileID: 1982326025805376, guid: 5ec7ba66e2b83ed4b8afe00b620c7297,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

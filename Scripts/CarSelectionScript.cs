@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CarSelectionScript : MonoBehaviour {
 
-    private List<GameObject> cars;
+    //private List<GameObject> cars;
     private int selectionIndex;
 
     private GameObject[] carsList;

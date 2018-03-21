@@ -5,14 +5,6 @@ using UnityEngine;
 
 public class LoadTrack2 : MonoBehaviour {
 
-    void OnGUI()
-    {
-        if (GUI.Button(new Rect(15, 15, 100, 50), "Dashboard"))
-        {
-            SceneManager.LoadScene(1);
-        }
-    }
-
     public void ConfirmButton()
     {
         SceneManager.LoadScene("czewa");

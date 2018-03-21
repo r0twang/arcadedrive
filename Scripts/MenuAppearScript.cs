@@ -3,45 +3,20 @@ using System.Collections;
 
 public class MenuAppearScript : MonoBehaviour
 {
+    public bool czewaActive = false;
+    public bool katoActive = false;
+    public bool krakActive = false;
+    public bool bielskoActive = false;
     public GameObject czewaMenuPrefab;
     public GameObject katoMenuPrefab;
     public GameObject krakMenuPrefab;
-    public enum Cities { empty, Czewa, Kato, Krak };
+    public GameObject bielskoMenuPrefab;
+    public enum Cities { empty, Czewa, Kato, Krak, Bielsko };
     public Cities chosenCity;
-    public static Cities baseCity;
 
     private void Awake()
     {
-        czewaMenuPrefab.SetActive(false);
-        katoMenuPrefab.SetActive(false);
-        krakMenuPrefab.SetActive(false);
-
-        switch (baseCity)
-        {
-            case Cities.Czewa:
-                czewaMenuPrefab.SetActive(true);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(false);
-                break;
-
-            case Cities.Kato:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(true);
-                krakMenuPrefab.SetActive(false);
-                break;
-
-            case Cities.Krak:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(true);
-                break;
-
-            default:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(false);
-                break;
-        }
+        clearCities();
     }
 
     private void Update()
@@ -49,43 +24,101 @@ public class MenuAppearScript : MonoBehaviour
         switch (chosenCity)
         {
             case Cities.Czewa:
-                czewaMenuPrefab.SetActive(true);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(false);
+                czewaMenuPrefab.SetActive(czewaActive);
                 break;
 
             case Cities.Kato:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(true);
-                krakMenuPrefab.SetActive(false);
+                katoMenuPrefab.SetActive(katoActive);
                 break;
 
             case Cities.Krak:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(true);
+                krakMenuPrefab.SetActive(krakActive);
                 break;
 
+            case Cities.Bielsko:
+                bielskoMenuPrefab.SetActive(bielskoActive);
+                break;
+
+            case Cities.empty:
             default:
-                czewaMenuPrefab.SetActive(false);
-                katoMenuPrefab.SetActive(false);
-                krakMenuPrefab.SetActive(false);
+                clearCities();
                 break;
         }
     }
 
+    public void clearCities()
+    {
+        czewaActive = false;
+        katoActive = false;
+        krakActive = false;
+        bielskoActive = false;
+        czewaMenuPrefab.SetActive(czewaActive);
+        katoMenuPrefab.SetActive(katoActive);
+        krakMenuPrefab.SetActive(krakActive);
+        bielskoMenuPrefab.SetActive(bielskoActive);
+    }
+
+    public void OnEmptyClick()
+    {
+        clearCities();
+        chosenCity = Cities.empty;
+        Debug.Log("CZEWA: " + czewaActive);
+        Debug.Log("KATO :" + katoActive);
+        Debug.Log("KRAK :" + krakActive);
+        Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("");
+    }
+
     public void OnCzewaCityClick()
     {
+        clearCities();
+        czewaActive = !czewaActive;
+        czewaMenuPrefab.SetActive(czewaActive);
         chosenCity = Cities.Czewa;
+        Debug.Log("CZEWA: " + czewaActive);
+        Debug.Log("KATO :" + katoActive);
+        Debug.Log("KRAK :" + krakActive);
+        Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("");
     }
 
     public void OnKatoCityClick()
     {
+        clearCities();
+        katoActive = !katoActive;
+        katoMenuPrefab.SetActive(katoActive);
         chosenCity = Cities.Kato;
+        Debug.Log("CZEWA: " + czewaActive);
+        Debug.Log("KATO :" + katoActive);
+        Debug.Log("KRAK :" + krakActive);
+        Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("");
     }
 
     public void OnKrakCityClick()
     {
+        clearCities();
+        krakActive = !krakActive;
+        krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Krak;
+        Debug.Log("CZEWA: " + czewaActive);
+        Debug.Log("KATO :" + katoActive);
+        Debug.Log("KRAK :" + krakActive);
+        Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("");
     }
+
+    public void OnBielskoCityClick()
+    {
+        clearCities();
+        bielskoActive = !bielskoActive;
+        bielskoMenuPrefab.SetActive(bielskoActive);
+        chosenCity = Cities.Bielsko;
+        Debug.Log("CZEWA: " + czewaActive);
+        Debug.Log("KATO :" + katoActive);
+        Debug.Log("KRAK :" + krakActive);
+        Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("");
+    }
+
 }

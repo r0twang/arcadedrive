@@ -4,14 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadTrack8 : MonoBehaviour {
 
-	void OnGUI()
-	{
-        if (GUI.Button(new Rect(15, 100, 100, 50), "Car Select"))
-        {
-            SceneManager.LoadScene(0);
-        }
-    }
-
     public void ConfirmButton()
     {
         SceneManager.LoadScene("krak");
