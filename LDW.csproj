@@ -285,6 +285,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BaseSelectScript.cs" />
     <Compile Include="Assets\Scripts\BlueLineOver.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
@@ -292,7 +293,7 @@
     <Compile Include="Assets\Scripts\CarSelectionScript.cs" />
     <Compile Include="Assets\Scripts\CarSelectMenuScript.cs" />
     <Compile Include="Assets\Scripts\ChosenCarScript.cs" />
-    <Compile Include="Assets\Scripts\CitySwitch.cs" />
+    <Compile Include="Assets\Scripts\CloseAppScript.cs" />
     <Compile Include="Assets\Scripts\CollisionScript.cs" />
     <Compile Include="Assets\Scripts\DistanceScript.cs" />
     <Compile Include="Assets\Scripts\EnterCarScript.cs" />
