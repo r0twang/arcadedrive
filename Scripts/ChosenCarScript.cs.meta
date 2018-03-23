@@ -5,7 +5,11 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - galion: {fileID: 1339496197067062, guid: 9aa0ffa7ebfd32a44aa71b078884f0e9, type: 2}
+  - edsel: {fileID: 1585038407289592, guid: 05fa6cda7eced3c4c985fa46afe87560, type: 2}
+  - sharky: {fileID: 1361395509346558, guid: fbc1ad93c0474df4f986b470282efc0c, type: 2}
+  - zx100: {fileID: 1301027361018970, guid: 128c6f50d11b5834ab9668671829862e, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

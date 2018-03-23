@@ -23,8 +23,8 @@ public class LoadTrack8 : MonoBehaviour {
 	void Update () {
 		foreach(Touch touch in Input.touches)
 		{
-			if(gameObject.name == "Track8")
-                SceneManager.LoadScene(3);
+			if(gameObject.name == "track8")
+                SceneManager.LoadScene("track8");
         }
     }
 }

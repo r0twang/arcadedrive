@@ -3,13 +3,13 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class LoadTrack1 : MonoBehaviour {
-    void OnGUI()
-	{
-        if (GUI.Button(new Rect(15, 250, 100, 50), "Exit"))
-        {
-            Application.Quit();
-        }
-    }
+ //   void OnGUI()
+	//{
+ //       if (GUI.Button(new Rect(15, 250, 100, 50), "Exit"))
+ //       {
+ //           Application.Quit();
+ //       }
+ //   }
 
     public void ConfirmButton()
     {
@@ -32,8 +32,8 @@ public class LoadTrack1 : MonoBehaviour {
     void Update () {
 		foreach(Touch touch in Input.touches)
 		{
-			if(gameObject.name == "Track1")
-                SceneManager.LoadScene(2);
+			if(gameObject.name == "track1")
+                SceneManager.LoadScene("track1");
         }
     }
 }

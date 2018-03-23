@@ -28,7 +28,7 @@ public class LoadTrack2 : MonoBehaviour {
         foreach (Touch touch in Input.touches)
         {
             if (gameObject.name == "track2")
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene("track2");
         }
     }
 }

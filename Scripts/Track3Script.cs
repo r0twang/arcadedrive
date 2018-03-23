@@ -9,11 +9,11 @@ public class Track3Script : MonoBehaviour {
     {
         if (GUI.Button(new Rect(5, 5, 100, 100), "Dashboard"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("citySelect");
         }
         if (GUI.Button(new Rect(5, 150, 100, 50), "Car Select"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("carSelect");
         }
     }
     // Use this for initialization
