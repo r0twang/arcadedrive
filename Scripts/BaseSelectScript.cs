@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BaseSelectScript : MonoBehaviour
 {
-    public GameObject popupButton;
+    public GameObject popupPromptButton;
+    
 
     public void OKButton()
     {
-        popupButton.SetActive(false);
+        popupPromptButton.SetActive(false);
     }
 
     private void Start()

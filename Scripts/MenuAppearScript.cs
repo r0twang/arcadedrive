@@ -12,7 +12,8 @@ public class MenuAppearScript : MonoBehaviour
     public GameObject krakMenuPrefab;
     public GameObject bielskoMenuPrefab;
     public enum Cities { empty, Czewa, Kato, Krak, Bielsko };
-    public Cities chosenCity;
+    public Cities chosenCity = Cities.empty;
+    private int selectedCityIndex = 0;
 
     private void Awake()
     {
@@ -48,6 +49,7 @@ public class MenuAppearScript : MonoBehaviour
 
     public void clearCities()
     {
+        selectedCityIndex = 0;
         czewaActive = false;
         katoActive = false;
         krakActive = false;
@@ -72,6 +74,7 @@ public class MenuAppearScript : MonoBehaviour
     public void OnCzewaCityClick()
     {
         clearCities();
+        selectedCityIndex = 1;
         czewaActive = !czewaActive;
         czewaMenuPrefab.SetActive(czewaActive);
         chosenCity = Cities.Czewa;
@@ -85,6 +88,7 @@ public class MenuAppearScript : MonoBehaviour
     public void OnKatoCityClick()
     {
         clearCities();
+        selectedCityIndex = 2;
         katoActive = !katoActive;
         katoMenuPrefab.SetActive(katoActive);
         chosenCity = Cities.Kato;
@@ -98,6 +102,7 @@ public class MenuAppearScript : MonoBehaviour
     public void OnKrakCityClick()
     {
         clearCities();
+        selectedCityIndex = 3;
         krakActive = !krakActive;
         krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Krak;
@@ -111,6 +116,7 @@ public class MenuAppearScript : MonoBehaviour
     public void OnBielskoCityClick()
     {
         clearCities();
+        selectedCityIndex = 4;
         bielskoActive = !bielskoActive;
         bielskoMenuPrefab.SetActive(bielskoActive);
         chosenCity = Cities.Bielsko;
