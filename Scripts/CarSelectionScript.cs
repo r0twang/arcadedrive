@@ -62,7 +62,7 @@ public class CarSelectionScript : MonoBehaviour {
     public void ConfirmButton()
     {
         PlayerPrefs.SetInt("ChosenCar", selectionIndex);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("citySelect");
     }
 
     //private void Update()

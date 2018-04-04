@@ -13,10 +13,11 @@ public class MenuAppearScript : MonoBehaviour
     public GameObject bielskoMenuPrefab;
     public enum Cities { empty, Czewa, Kato, Krak, Bielsko };
     public Cities chosenCity = Cities.empty;
-    private int selectedCityIndex = 0;
+    public int selectedCityIndex;
 
     private void Awake()
     {
+        Debug.Log(selectedCityIndex);
         clearCities();
     }
 
@@ -47,9 +48,14 @@ public class MenuAppearScript : MonoBehaviour
         }
     }
 
+    public void ConfirmButton()
+    {
+        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
+        Debug.Log(selectedCityIndex);
+    }
+
     public void clearCities()
     {
-        selectedCityIndex = 0;
         czewaActive = false;
         katoActive = false;
         krakActive = false;
@@ -82,6 +88,7 @@ public class MenuAppearScript : MonoBehaviour
         Debug.Log("KATO :" + katoActive);
         Debug.Log("KRAK :" + krakActive);
         Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("Selected city: " + selectedCityIndex);
         Debug.Log("");
     }
 
@@ -96,6 +103,7 @@ public class MenuAppearScript : MonoBehaviour
         Debug.Log("KATO :" + katoActive);
         Debug.Log("KRAK :" + krakActive);
         Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("Selected city: " + selectedCityIndex);
         Debug.Log("");
     }
 
@@ -110,6 +118,7 @@ public class MenuAppearScript : MonoBehaviour
         Debug.Log("KATO :" + katoActive);
         Debug.Log("KRAK :" + krakActive);
         Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("Selected city: " + selectedCityIndex);
         Debug.Log("");
     }
 
@@ -124,6 +133,7 @@ public class MenuAppearScript : MonoBehaviour
         Debug.Log("KATO :" + katoActive);
         Debug.Log("KRAK :" + krakActive);
         Debug.Log("BIELSKO :" + bielskoActive);
+        Debug.Log("Selected city: " + selectedCityIndex);
         Debug.Log("");
     }
 
