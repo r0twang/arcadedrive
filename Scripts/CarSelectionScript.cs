@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class CarSelectionScript : MonoBehaviour {
 
-    //private List<GameObject> cars;
+    public GameObject activeCityScriptContainer;
+
     private int selectionIndex;
 
     private GameObject[] carsList;
+    private MenuAppearScript activeCityScript;
 
 	// Use this for initialization
 	void Start () {
+
+        activeCityScript = GetComponent<MenuAppearScript>();
 
         selectionIndex = PlayerPrefs.GetInt("Chosencar");
 
@@ -62,37 +66,16 @@ public class CarSelectionScript : MonoBehaviour {
     public void ConfirmButton()
     {
         PlayerPrefs.SetInt("ChosenCar", selectionIndex);
-        SceneManager.LoadScene("citySelect");
+        PlayerPrefs.GetInt("selectedCity", MenuAppearScript.selectedCityIndex);
+        Debug.Log(MenuAppearScript.selectedCityIndex);
+        switch (MenuAppearScript.selectedCityIndex)
+        {
+            case 0: SceneManager.LoadScene("czewa"); break;
+            case 1: SceneManager.LoadScene("kato"); break;
+            case 2: SceneManager.LoadScene("krak"); break;
+            case 3: SceneManager.LoadScene("bielsko"); break;
+            case 999: SceneManager.LoadScene("czewa"); break;
+        }
+        //SceneManager.LoadScene("citySelect");
     }
-
-    //private void Update()
-    //{
-    //    if (Input.GetButtonDown("Right"))
-    //    {
-    //        carsList[selectionIndex].SetActive(false);
-    //        selectionIndex++;
-
-    //        if (selectionIndex >= carsList.Length)
-    //        {
-    //            selectionIndex = 0;
-    //        }
-    //        carsList[selectionIndex].SetActive(true);
-    //    }
-    //    if (Input.GetButtonDown("Left"))
-    //    {
-    //        carsList[selectionIndex].SetActive(false);
-    //        selectionIndex--;
-
-    //        if (selectionIndex < 0)
-    //        {
-    //            selectionIndex = carsList.Length - 1;
-    //        }
-    //        carsList[selectionIndex].SetActive(true);
-    //    }
-    //    if (Input.GetButtonDown("Submit"))
-    //    {
-    //        PlayerPrefs.SetInt("ChosenCar", selectionIndex);
-    //        SceneManager.LoadScene(1);
-    //    }
-    //}
 }

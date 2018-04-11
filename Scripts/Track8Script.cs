@@ -14,6 +14,10 @@ public class Track8Script: MonoBehaviour {
         {
             SceneManager.LoadScene("carSelect");
         }
+        if (GUI.Button(new Rect(5, 250, 100, 50), "Exit"))
+        {
+            Application.Quit();
+        }
     }
 	
 	// Use this for initialization

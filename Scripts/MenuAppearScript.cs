@@ -13,12 +13,33 @@ public class MenuAppearScript : MonoBehaviour
     public GameObject bielskoMenuPrefab;
     public enum Cities { empty, Czewa, Kato, Krak, Bielsko };
     public Cities chosenCity = Cities.empty;
-    public int selectedCityIndex;
+    public static int selectedCityIndex;
+    private GameObject[] cityList;
 
     private void Awake()
     {
-        Debug.Log(selectedCityIndex);
+        DontDestroyOnLoad(transform.gameObject);
         clearCities();
+    }
+
+    private void Start()
+    {
+        //cityList = new GameObject[transform.childCount];
+
+        //for (int i = 0; i < transform.childCount; i++)
+        //{
+        //    cityList[i] = transform.GetChild(i).gameObject;
+        //}
+
+        //foreach (GameObject go in cityList)
+        //{
+        //    go.SetActive(false);
+        //}
+
+        //if (cityList[selectedCityIndex])
+        //{
+        //    cityList[selectedCityIndex].SetActive(true);
+        //}
     }
 
     private void Update()
@@ -50,7 +71,6 @@ public class MenuAppearScript : MonoBehaviour
 
     public void ConfirmButton()
     {
-        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
         Debug.Log(selectedCityIndex);
     }
 
@@ -70,71 +90,50 @@ public class MenuAppearScript : MonoBehaviour
     {
         clearCities();
         chosenCity = Cities.empty;
-        Debug.Log("CZEWA: " + czewaActive);
-        Debug.Log("KATO :" + katoActive);
-        Debug.Log("KRAK :" + krakActive);
-        Debug.Log("BIELSKO :" + bielskoActive);
-        Debug.Log("");
     }
 
     public void OnCzewaCityClick()
     {
         clearCities();
-        selectedCityIndex = 1;
+        selectedCityIndex = 0;
         czewaActive = !czewaActive;
         czewaMenuPrefab.SetActive(czewaActive);
         chosenCity = Cities.Czewa;
-        Debug.Log("CZEWA: " + czewaActive);
-        Debug.Log("KATO :" + katoActive);
-        Debug.Log("KRAK :" + krakActive);
-        Debug.Log("BIELSKO :" + bielskoActive);
+        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
         Debug.Log("Selected city: " + selectedCityIndex);
-        Debug.Log("");
     }
 
     public void OnKatoCityClick()
     {
         clearCities();
-        selectedCityIndex = 2;
+        selectedCityIndex = 1;
         katoActive = !katoActive;
         katoMenuPrefab.SetActive(katoActive);
         chosenCity = Cities.Kato;
-        Debug.Log("CZEWA: " + czewaActive);
-        Debug.Log("KATO :" + katoActive);
-        Debug.Log("KRAK :" + krakActive);
-        Debug.Log("BIELSKO :" + bielskoActive);
+        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
         Debug.Log("Selected city: " + selectedCityIndex);
-        Debug.Log("");
     }
 
     public void OnKrakCityClick()
     {
         clearCities();
-        selectedCityIndex = 3;
+        selectedCityIndex = 2;
         krakActive = !krakActive;
         krakMenuPrefab.SetActive(krakActive);
         chosenCity = Cities.Krak;
-        Debug.Log("CZEWA: " + czewaActive);
-        Debug.Log("KATO :" + katoActive);
-        Debug.Log("KRAK :" + krakActive);
-        Debug.Log("BIELSKO :" + bielskoActive);
+        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
         Debug.Log("Selected city: " + selectedCityIndex);
-        Debug.Log("");
     }
 
     public void OnBielskoCityClick()
     {
         clearCities();
-        selectedCityIndex = 4;
+        selectedCityIndex = 3;
         bielskoActive = !bielskoActive;
         bielskoMenuPrefab.SetActive(bielskoActive);
         chosenCity = Cities.Bielsko;
-        Debug.Log("CZEWA: " + czewaActive);
-        Debug.Log("KATO :" + katoActive);
-        Debug.Log("KRAK :" + krakActive);
-        Debug.Log("BIELSKO :" + bielskoActive);
+        PlayerPrefs.SetInt("selectedCity", selectedCityIndex);
         Debug.Log("Selected city: " + selectedCityIndex);
-        Debug.Log("");
     }
 
 }
