@@ -1056,6 +1056,60 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1327926699}
+--- !u!1 &1333295396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1333295398}
+  - component: {fileID: 1333295397}
+  m_Layer: 0
+  m_Name: BaseSelectContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1333295397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333295396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd351124d3cee040846b0783f2e4341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  czewaActive: 0
+  katoActive: 0
+  krakActive: 0
+  bielskoActive: 0
+  czewaMenuPrefab: {fileID: 1785159225342494, guid: e3f03185ceedf574896854fd27a95c8c,
+    type: 2}
+  katoMenuPrefab: {fileID: 1945521568699038, guid: b37c6fe442cf7324b99c0d872fe69257,
+    type: 2}
+  krakMenuPrefab: {fileID: 1479616668614276, guid: cfd1e375c36ecdf4ab4ed4b0cf526f28,
+    type: 2}
+  bielskoMenuPrefab: {fileID: 1277102560339498, guid: 5ec7ba66e2b83ed4b8afe00b620c7297,
+    type: 2}
+  chosenCity: 0
+  selectedCityIndex: 0
+--- !u!4 &1333295398
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333295396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 392.88547, y: 140.51317, z: -3.8855352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366731108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e848e471c0d56c245a003baa21cef4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeCityScriptContainer: {fileID: 1333295396}
 --- !u!4 &2128929208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4286378744933880, guid: 128c6f50d11b5834ab9668671829862e,
