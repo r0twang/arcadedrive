@@ -295,6 +295,7 @@
     <Compile Include="Assets\Scripts\ChosenCarScript.cs" />
     <Compile Include="Assets\Scripts\CloseAppScript.cs" />
     <Compile Include="Assets\Scripts\CollisionScript.cs" />
+    <Compile Include="Assets\Scripts\CzewaCityScript.cs" />
     <Compile Include="Assets\Scripts\DistanceScript.cs" />
     <Compile Include="Assets\Scripts\EnterCarScript.cs" />
     <Compile Include="Assets\Scripts\LoadTrack1.cs" />
