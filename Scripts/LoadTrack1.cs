@@ -3,13 +3,6 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class LoadTrack1 : MonoBehaviour {
- //   void OnGUI()
-	//{
- //       if (GUI.Button(new Rect(15, 250, 100, 50), "Exit"))
- //       {
- //           Application.Quit();
- //       }
- //   }
 
     public void ConfirmButton()
     {

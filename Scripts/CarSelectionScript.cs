@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class CarSelectionScript : MonoBehaviour {
 
-    public GameObject activeCityScriptContainer;
-
     private int selectionIndex;
 
     private GameObject[] carsList;
@@ -67,7 +65,6 @@ public class CarSelectionScript : MonoBehaviour {
     {
         PlayerPrefs.SetInt("ChosenCar", selectionIndex);
         PlayerPrefs.GetInt("selectedCity", MenuAppearScript.selectedCityIndex);
-        Debug.Log(MenuAppearScript.selectedCityIndex);
         switch (MenuAppearScript.selectedCityIndex)
         {
             case 0: SceneManager.LoadScene("czewa"); break;
@@ -76,6 +73,5 @@ public class CarSelectionScript : MonoBehaviour {
             case 3: SceneManager.LoadScene("bielsko"); break;
             case 999: SceneManager.LoadScene("czewa"); break;
         }
-        //SceneManager.LoadScene("citySelect");
     }
 }

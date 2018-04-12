@@ -24,22 +24,6 @@ public class MenuAppearScript : MonoBehaviour
 
     private void Start()
     {
-        //cityList = new GameObject[transform.childCount];
-
-        //for (int i = 0; i < transform.childCount; i++)
-        //{
-        //    cityList[i] = transform.GetChild(i).gameObject;
-        //}
-
-        //foreach (GameObject go in cityList)
-        //{
-        //    go.SetActive(false);
-        //}
-
-        //if (cityList[selectedCityIndex])
-        //{
-        //    cityList[selectedCityIndex].SetActive(true);
-        //}
     }
 
     private void Update()
