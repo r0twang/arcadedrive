@@ -40,6 +40,7 @@ public class DistanceScript : MonoBehaviour {
                                 if (transform.position.y >= czewaKatoDist)
                                 {
                                     EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 1;
                                     SceneManager.LoadScene("kato");
                                 }
                                 break;
@@ -49,6 +50,7 @@ public class DistanceScript : MonoBehaviour {
                                 if (transform.position.y >= czewaKrakDist)
                                 {
                                     EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 2;
                                     SceneManager.LoadScene("krak");
                                 }
                                 break;
@@ -58,22 +60,89 @@ public class DistanceScript : MonoBehaviour {
                 }
             case 1:
                 {
-                    if (transform.position.y >= katoKrakDist)
+                    PlayerPrefs.GetInt("selectedDestination", KatoCityScript.destinationCityIndex);
+                    switch (KatoCityScript.destinationCityIndex)
                     {
-                        EnterCarScript.isPlayerInAnyCar = false;
-                        SceneManager.LoadScene("krak");
+                        case 0:
+                            {
+                                if (transform.position.y >= czewaKatoDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 0;
+                                    SceneManager.LoadScene("czewa");
+                                }
+                                break;
+                            }
+                        case 2:
+                            {
+                                if (transform.position.y >= katoKrakDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 2;
+                                    SceneManager.LoadScene("krak");
+                                }
+                                break;
+                            }
+                        case 3:
+                            {
+                                if (transform.position.y >= katoBielskoDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 3;
+                                    SceneManager.LoadScene("bielsko");
+                                }
+                                break;
+                            }
                     }
                     break;
                 }
             case 2:
                 {
-                    if (transform.position.y >= czewaKrakDist)
+                    PlayerPrefs.GetInt("selectedDestination", KrakCityScript.destinationCityIndex);
+                    switch (KrakCityScript.destinationCityIndex)
                     {
-                        EnterCarScript.isPlayerInAnyCar = false;
-                        SceneManager.LoadScene("czewa");
+                        case 0:
+                            {
+                                if (transform.position.y >= czewaKrakDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 0;
+                                    SceneManager.LoadScene("czewa");
+                                }
+                                break;
+                            }
+                        case 1:
+                            {
+                                if (transform.position.y >= katoKrakDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 1;
+                                    SceneManager.LoadScene("kato");
+                                }
+                                break;
+                            }
+                        case 3:
+                            {
+                                if (transform.position.y >= krakBielskoDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 3;
+                                    SceneManager.LoadScene("bielsko");
+                                }
+                                break;
+                            }
                     }
                     break;
                 }
+
+            //{
+            //    if (transform.position.y >= czewaKrakDist)
+            //    {
+            //        EnterCarScript.isPlayerInAnyCar = false;
+            //        SceneManager.LoadScene("czewa");
+            //    }
+            //    break;
+            //}
             case 3:
                 {
                     if (transform.position.y >= krakBielskoDist)
