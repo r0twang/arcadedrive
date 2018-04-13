@@ -298,9 +298,12 @@
     <Compile Include="Assets\Scripts\CzewaCityScript.cs" />
     <Compile Include="Assets\Scripts\DistanceScript.cs" />
     <Compile Include="Assets\Scripts\EnterCarScript.cs" />
+    <Compile Include="Assets\Scripts\KatoCityScript.cs" />
+    <Compile Include="Assets\Scripts\KrakCityScript.cs" />
     <Compile Include="Assets\Scripts\LoadTrack1.cs" />
     <Compile Include="Assets\Scripts\LoadTrack2.cs" />
     <Compile Include="Assets\Scripts\LoadTrack3.cs" />
+    <Compile Include="Assets\Scripts\LoadTrack4.cs" />
     <Compile Include="Assets\Scripts\LoadTrack8.cs" />
     <Compile Include="Assets\Scripts\MenuAppearScript.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -309,6 +312,7 @@
     <Compile Include="Assets\Scripts\Track1Script.cs" />
     <Compile Include="Assets\Scripts\Track2Script.cs" />
     <Compile Include="Assets\Scripts\Track3Script.cs" />
+    <Compile Include="Assets\Scripts\Track4Script.cs" />
     <Compile Include="Assets\Scripts\Track8Script.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\WhiteLineOver.cs" />
