@@ -286,6 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BaseSelectScript.cs" />
+    <Compile Include="Assets\Scripts\BielskoCityScript.cs" />
     <Compile Include="Assets\Scripts\BlueLineOver.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
