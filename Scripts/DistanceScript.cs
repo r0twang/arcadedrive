@@ -134,24 +134,42 @@ public class DistanceScript : MonoBehaviour {
                     }
                     break;
                 }
-
-            //{
-            //    if (transform.position.y >= czewaKrakDist)
-            //    {
-            //        EnterCarScript.isPlayerInAnyCar = false;
-            //        SceneManager.LoadScene("czewa");
-            //    }
-            //    break;
-            //}
             case 3:
                 {
-                    if (transform.position.y >= krakBielskoDist)
+                    PlayerPrefs.GetInt("selectedDestination", BielskoCityScript.destinationCityIndex);
+                    switch (BielskoCityScript.destinationCityIndex)
                     {
-                        EnterCarScript.isPlayerInAnyCar = false;
-                        SceneManager.LoadScene("bielsko");
+                        case 1:
+                            {
+                                if (transform.position.y >= katoBielskoDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 1;
+                                    SceneManager.LoadScene("kato");
+                                }
+                                break;
+                            }
+                        case 2:
+                            {
+                                if (transform.position.y >= krakBielskoDist)
+                                {
+                                    EnterCarScript.isPlayerInAnyCar = false;
+                                    MenuAppearScript.selectedCityIndex = 2;
+                                    SceneManager.LoadScene("krak");
+                                }
+                                break;
+                            }
                     }
                     break;
                 }
+                //{
+                //    if (transform.position.y >= krakBielskoDist)
+                //    {
+                //        EnterCarScript.isPlayerInAnyCar = false;
+                //        SceneManager.LoadScene("bielsko");
+                //    }
+                //    break;
+                //}
         }
     }
 

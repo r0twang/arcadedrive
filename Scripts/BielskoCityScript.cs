@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KrakCityScript : MonoBehaviour {
+public class BielskoCityScript : MonoBehaviour {
 
-    public bool bielskoDestMenuActive = false;
-    public bool czewaDestMenuActive = false;
     public bool katoDestMenuActive = false;
-    public GameObject bielskoDestMenuPrefab;
-    public GameObject czewaDestMenuPrefab;
+    public bool krakDestMenuActive = false;
     public GameObject katoDestMenuPrefab;
-    public enum Destinations { Czewa = 0, Kato = 1, Bielsko = 3, empty = 999 };
+    public GameObject krakDestMenuPrefab;
+    public enum Destinations { Kato = 1, Krak = 2, empty = 999 };
     public Destinations chosenDestination = Destinations.empty;
     public static int destinationCityIndex;
 
-    const float czewaKrakDist = 310.0f;
     const float katoKrakDist = 130.0f;
     const float katoBielskoDist = 110.0f;
 
@@ -29,21 +26,18 @@ public class KrakCityScript : MonoBehaviour {
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         switch (chosenDestination)
         {
-            case Destinations.Czewa:
-                czewaDestMenuPrefab.SetActive(czewaDestMenuActive);
-                break;
-
             case Destinations.Kato:
                 katoDestMenuPrefab.SetActive(katoDestMenuActive);
                 break;
 
-            case Destinations.Bielsko:
-                bielskoDestMenuPrefab.SetActive(bielskoDestMenuActive);
+            case Destinations.Krak:
+                krakDestMenuPrefab.SetActive(krakDestMenuActive);
                 break;
 
             case Destinations.empty:
@@ -55,11 +49,9 @@ public class KrakCityScript : MonoBehaviour {
 
     public void clearCities()
     {
-        bielskoDestMenuActive = false;
-        czewaDestMenuActive = false;
+        krakDestMenuActive = false;
         katoDestMenuActive = false;
-        bielskoDestMenuPrefab.SetActive(bielskoDestMenuActive);
-        czewaDestMenuPrefab.SetActive(czewaDestMenuActive);
+        krakDestMenuPrefab.SetActive(krakDestMenuActive);
         katoDestMenuPrefab.SetActive(katoDestMenuActive);
     }
 
@@ -67,16 +59,6 @@ public class KrakCityScript : MonoBehaviour {
     {
         clearCities();
         chosenDestination = Destinations.empty;
-    }
-
-    public void OnCzewaCityClick()
-    {
-        clearCities();
-        destinationCityIndex = 0;
-        czewaDestMenuActive = !czewaDestMenuActive;
-        czewaDestMenuPrefab.SetActive(czewaDestMenuActive);
-        chosenDestination = Destinations.Czewa;
-        PlayerPrefs.SetInt("selectedDestination", destinationCityIndex);
     }
 
     public void OnKatoCityClick()
@@ -89,13 +71,13 @@ public class KrakCityScript : MonoBehaviour {
         PlayerPrefs.SetInt("selectedDestination", destinationCityIndex);
     }
 
-    public void OnBielskoCityClick()
+    public void OnKrakCityClick()
     {
         clearCities();
-        destinationCityIndex = 3;
-        bielskoDestMenuActive = !bielskoDestMenuActive;
-        bielskoDestMenuPrefab.SetActive(bielskoDestMenuActive);
-        chosenDestination = Destinations.Bielsko;
+        destinationCityIndex = 2;
+        krakDestMenuActive = !krakDestMenuActive;
+        krakDestMenuPrefab.SetActive(krakDestMenuActive);
+        chosenDestination = Destinations.Krak;
         PlayerPrefs.SetInt("selectedDestination", destinationCityIndex);
     }
 }
