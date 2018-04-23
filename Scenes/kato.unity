@@ -799,10 +799,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+    m_HighlightedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -846,7 +846,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2066,10 +2066,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+    m_HighlightedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2113,7 +2113,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2288,10 +2288,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+    m_HighlightedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2335,7 +2335,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2611,8 +2611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b2061fa79a098488ba73d6ec313895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 722545828}
-  zoomSpeed: 0.15
+  canvas: {fileID: 696407600}
+  zoomSpeed: 0.03
 --- !u!1 &2045976591
 GameObject:
   m_ObjectHideFlags: 0

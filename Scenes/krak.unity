@@ -574,9 +574,86 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ConfirmTrackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 114181434360238212, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114227792068339868, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114227792068339868, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114227792068339868, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114505471429663984, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114505471429663984, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114824918811505888, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114505471429663984, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114599467666832366, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114578909441653740, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114578909441653740, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114578909441653740, guid: 44477304606e87f42b42cb75f188aacc,
+        type: 2}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44477304606e87f42b42cb75f188aacc, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &754969988 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223604016785986484, guid: 44477304606e87f42b42cb75f188aacc,
+    type: 2}
+  m_PrefabInternal: {fileID: 754969987}
 --- !u!1 &798887553 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1821159331831202, guid: 44477304606e87f42b42cb75f188aacc,
@@ -1010,5 +1087,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b2061fa79a098488ba73d6ec313895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 722545828}
-  zoomSpeed: 0.15
+  canvas: {fileID: 754969988}
+  zoomSpeed: 0.03

@@ -246,10 +246,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5,
+    m_HighlightedSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -293,7 +293,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -659,10 +659,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5,
+    m_HighlightedSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -706,7 +706,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0499f5a703ece5647b9ecc306868bca4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62445a28d69ed1a478a762cf5cf8bfb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -853,9 +853,62 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114162394273432548, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114741571544110638, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114741571544110638, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114741571544110638, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114682083013597974, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
+    - target: {fileID: 114112440502472260, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114112440502472260, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144559227f59afd4f86e5072e7b940e6,
+        type: 3}
+    - target: {fileID: 114112440502472260, guid: 4beda9851ca686544bfc94f587ce09b6,
+        type: 2}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e030ab316745f644d9b29888e0a4a092,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4beda9851ca686544bfc94f587ce09b6, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &946205753 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223230315772863340, guid: 4beda9851ca686544bfc94f587ce09b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 946205752}
 --- !u!1 &1132466889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1273,6 @@ GameObject:
   - component: {fileID: 2033389634}
   - component: {fileID: 2033389633}
   - component: {fileID: 2033389637}
-  - component: {fileID: 2033389638}
   - component: {fileID: 2033389639}
   m_Layer: 0
   m_Name: Main Camera
@@ -1303,22 +1355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd9a92779cd22d41bcae1b97787a352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2033389638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2033389632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3002f046d9c4343998064abfc2d7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  katoDestMenuActive: 0
-  krakDestMenuActive: 0
-  katoDestMenuPrefab: {fileID: 0}
-  krakDestMenuPrefab: {fileID: 0}
-  chosenDestination: 999
 --- !u!114 &2033389639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,5 +1366,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b2061fa79a098488ba73d6ec313895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 722545828}
-  zoomSpeed: 0.15
+  canvas: {fileID: 946205753}
+  zoomSpeed: 0.03
