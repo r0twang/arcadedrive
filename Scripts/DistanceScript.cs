@@ -162,14 +162,6 @@ public class DistanceScript : MonoBehaviour {
                     }
                     break;
                 }
-                //{
-                //    if (transform.position.y >= krakBielskoDist)
-                //    {
-                //        EnterCarScript.isPlayerInAnyCar = false;
-                //        SceneManager.LoadScene("bielsko");
-                //    }
-                //    break;
-                //}
         }
     }
 
