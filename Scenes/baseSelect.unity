@@ -256,18 +256,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 73390600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 91286343}
-        m_MethodName: OnKrakCityClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &73390600
@@ -312,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91286340}
   - component: {fileID: 91286343}
+  - component: {fileID: 91286339}
   m_Layer: 0
   m_Name: _Main
   m_TagString: Untagged
@@ -319,6 +309,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &91286339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91286338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4736f60d3af8a674597385f58bbe5082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &91286340
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +353,136 @@ MonoBehaviour:
   krakMenuPrefab: {fileID: 1899263460}
   bielskoMenuPrefab: {fileID: 252368715}
   chosenCity: 0
+--- !u!224 &150404973 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 168250348}
+--- !u!1001 &168250348
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 722545829}
+    m_Modifications:
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441484937254524, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931950919657208, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91286339}
+    - target: {fileID: 114092453637175444, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91286343}
+    - target: {fileID: 114034602369892618, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91286343}
+    - target: {fileID: 114223068795451114, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91286343}
+    - target: {fileID: 114538568137668810, guid: 5741278b0f5f77f489b1a094f86688a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91286343}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5741278b0f5f77f489b1a094f86688a9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &252368715 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1685140093676440, guid: 18c9e2dbca3da814c80b9df015c8e738,
@@ -556,18 +687,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498696223}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 91286343}
-        m_MethodName: OnCzewaCityClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &498696223
@@ -787,6 +907,7 @@ RectTransform:
   - {fileID: 498696221}
   - {fileID: 73390597}
   - {fileID: 1743790670}
+  - {fileID: 150404973}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1388,18 +1509,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1743790672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 91286343}
-        m_MethodName: OnKatoCityClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1743790672
@@ -1625,18 +1735,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1995298260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 91286343}
-        m_MethodName: OnBielskoCityClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1995298260
