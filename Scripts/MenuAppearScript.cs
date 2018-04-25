@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MenuAppearScript : MonoBehaviour
@@ -7,18 +8,23 @@ public class MenuAppearScript : MonoBehaviour
     public bool katoActive = false;
     public bool krakActive = false;
     public bool bielskoActive = false;
+
     public GameObject czewaMenuPrefab;
     public GameObject katoMenuPrefab;
     public GameObject krakMenuPrefab;
     public GameObject bielskoMenuPrefab;
+
     public enum Cities { empty, Czewa, Kato, Krak, Bielsko };
     public Cities chosenCity = Cities.empty;
+
     public static int selectedCityIndex;
+
     private GameObject[] cityList;
 
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        selectedCityIndex = -1;
         clearCities();
     }
 
