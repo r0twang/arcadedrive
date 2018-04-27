@@ -725,6 +725,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114596908682610208, guid: 05fa6cda7eced3c4c985fa46afe87560, type: 2}
+    - {fileID: 114479073980967706, guid: 05fa6cda7eced3c4c985fa46afe87560, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 05fa6cda7eced3c4c985fa46afe87560, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1107572088
@@ -1096,7 +1097,6 @@ MonoBehaviour:
   bielskoMenuPrefab: {fileID: 1277102560339498, guid: 5ec7ba66e2b83ed4b8afe00b620c7297,
     type: 2}
   chosenCity: 0
-  selectedCityIndex: 0
 --- !u!4 &1333295398
 Transform:
   m_ObjectHideFlags: 0
@@ -1190,6 +1190,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114659575008872180, guid: 128c6f50d11b5834ab9668671829862e, type: 2}
+    - {fileID: 114375096075128878, guid: 128c6f50d11b5834ab9668671829862e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 128c6f50d11b5834ab9668671829862e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1429964510
@@ -1307,6 +1308,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114785114800850942, guid: 9aa0ffa7ebfd32a44aa71b078884f0e9, type: 2}
+    - {fileID: 114512077776435444, guid: 9aa0ffa7ebfd32a44aa71b078884f0e9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9aa0ffa7ebfd32a44aa71b078884f0e9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1873117920
@@ -1503,7 +1505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e848e471c0d56c245a003baa21cef4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeCityScriptContainer: {fileID: 1333295396}
 --- !u!4 &2128929208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4286378744933880, guid: 128c6f50d11b5834ab9668671829862e,
@@ -1551,5 +1552,6 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 114668639798732616, guid: fbc1ad93c0474df4f986b470282efc0c, type: 2}
     - {fileID: 114996870787608792, guid: fbc1ad93c0474df4f986b470282efc0c, type: 2}
+    - {fileID: 114827574380763212, guid: fbc1ad93c0474df4f986b470282efc0c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fbc1ad93c0474df4f986b470282efc0c, type: 2}
   m_IsPrefabParent: 0
