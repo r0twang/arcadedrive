@@ -24,7 +24,6 @@ public class MenuAppearScript : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
-        selectedCityIndex = -1;
         clearCities();
     }
 
