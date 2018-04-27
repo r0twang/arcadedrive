@@ -152,11 +152,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 9
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 229
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -233,7 +233,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 7
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -422,8 +422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.51, y: -9.3}
-  m_SizeDelta: {x: 57.69, y: 15.35}
+  m_AnchoredPosition: {x: -25.228073, y: 30.64}
+  m_SizeDelta: {x: 174.01, y: 35.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224298853183594606
 RectTransform:
@@ -443,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7, y: -8.2}
+  m_AnchoredPosition: {x: 3.7, y: 47.4}
   m_SizeDelta: {x: 548.57, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429785561787708
@@ -472,7 +472,7 @@ RectTransform:
   m_GameObject: {fileID: 1115669549496430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 224964962971618942}
   m_Father: {fileID: 224298853183594606}
@@ -498,8 +498,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.509947, y: -25.565731}
-  m_SizeDelta: {x: 57.69, y: 26.03}
+  m_AnchoredPosition: {x: -23.78, y: -23.43}
+  m_SizeDelta: {x: 176.91, y: 73.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224964962971618942
 RectTransform:
