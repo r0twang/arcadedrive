@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 50868396069465158}
   - component: {fileID: 61752415708447508}
   - component: {fileID: 114785114800850942}
-  - component: {fileID: 114512077776435444}
   - component: {fileID: 114217622720149770}
+  - component: {fileID: 114656840797336856}
   m_Layer: 0
   m_Name: gallionPrefab
   m_TagString: Vehicle
@@ -101,13 +101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411a31946be77d948806cd34f71a4f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114512077776435444
+--- !u!114 &114656840797336856
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1339496197067062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 392a96dfa229b8549a20b5ec71bde165, type: 3}
   m_Name: 
