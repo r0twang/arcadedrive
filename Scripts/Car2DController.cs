@@ -19,13 +19,14 @@ public class Car2DController : MonoBehaviour
 
     void Update()
     {
-        if (EnterCarScript.isPlayerInAnyCar)
-        {
-            if (Input.GetButtonDown("Accelerate"))
-            {
+        //EnterCarScript.isPlayerInAnyCar = true;
+        //if (EnterCarScript.isPlayerInAnyCar)
+        //{
+            //if (Input.GetButtonDown("Accelerate"))
+            //{
                 setAccelerate = true;
-            }
-            else
+            //}
+            //else
             if (Input.GetButtonDown("Brakes"))
             {
                 setBrake = true;
@@ -38,7 +39,7 @@ public class Car2DController : MonoBehaviour
             {
                 setBrake = false;
             }
-        }
+        //}
     }
 
     // Update is called once per frame

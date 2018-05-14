@@ -9,21 +9,22 @@ public class CameraFollow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        //Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("Vehicle");
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (followPlayer == true)
-        {
+        //if (followPlayer == true)
+        //{
             CamFollowPlayer();
-        }
-        if (EnterCarScript.isPlayerInAnyCar)
-        {
-            followPlayer = false;
+        //}
+        //if (EnterCarScript.isPlayerInAnyCar)
+        //{
+            //followPlayer = false;
             transform.position = new Vector3(target.position.x, target.position.y + 3.0f, -10f);
-        }
-        else followPlayer = true;
+        //}
+        //else followPlayer = true;
 	}
 
     public void SetFollowPlayer(bool val)
